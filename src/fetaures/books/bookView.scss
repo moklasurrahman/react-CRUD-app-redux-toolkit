@@ -1,0 +1,58 @@
+.bookViews{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h2{
+        font-size: 25px;
+        text-transform: capitalize;
+        margin-top: 30px;
+    }
+    table{
+        margin: 50px;
+        border-collapse: collapse;
+       
+        thead{
+            
+            tr{
+                
+                th{
+                    border: 1px solid;
+                    padding: 20px;
+                }
+            }
+        }
+    }
+
+    tbody{
+        tr{
+            td{
+                border: 1px solid;
+                padding: 20px;
+                button{
+                    width: 50px;
+                    margin: 5px;
+                    padding: 5px;
+                    border-radius: 5px;
+                    border: none;
+                    background-color: green;
+                    color: white;
+                    font-size: 12px;
+                    cursor: pointer;
+                    transition: 0.2s;
+                    &:first-child{
+                        &:hover{
+                            background-color: rgba(0, 128, 0, 0.753);
+                        }
+                    }
+                    &:nth-child(2){
+                        &:hover{
+                            background-color: red;
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
+}
